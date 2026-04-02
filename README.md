@@ -1,15 +1,31 @@
-# linux_journey
+# linux-journey
 My Linux learning journey (commands, practice, real-world usage)
 🐧 Linux Journey - Sammed
 
+
+💼 Real World Relevance
+
+Linux is widely used in servers and database environments.
+Learning these commands helps in managing servers, troubleshooting issues, and handling databases in production systems.
+
+
 This repository documents my journey of learning Linux step by step with practical commands and real-world understanding.
 
-📅 Progress Tracker
+📂 Learning Structure
 
-Day| Topic| Status
-Day 1| Basic Commands| ✅
-Day 2| Users & Permissions| ⏳
-Day 3| File System| ⏳
+Each folder represents one day or topic and contains:
+
+- 📘 Notes (easy explanations in my own words)
+- 💻 Commands used
+- 🧪 Practice examples
+
+---
+
+📝 Current Focus
+
+- Learning Linux basics step by step
+- Practicing commands in terminal
+- Building strong foundation for Database Engineering roles
 
 ---
 
