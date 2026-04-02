@@ -1,0 +1,31 @@
+🐧 Linux Journey Topics
+
+1. Basic Commands
+2. Users & Permissions
+3. File System Structure
+4. File Operations (cp, mv, rm, touch, etc.)
+5. Viewing Files (cat, less, head, tail)
+
+6. Process Management (ps, top, kill, nice)
+7. Package Management (apt, yum basics)
+8. Disk Management (df, du, lsblk)
+9. Searching (find, grep)
+10. Networking Basics (ping, netstat, ss, curl)
+
+11. File Permissions Deep (chmod, chown, umask)
+12. Log Files Handling (/var/log, tail -f)
+13. Service Management (systemctl)
+14. Cron Jobs (automation basics)
+15. Environment Variables
+
+16. SSH & Remote Access
+17. Compression (tar, gzip, zip)
+18. Disk & Mounting (mount, fstab basics)
+19. Monitoring Basics (top, htop, free, uptime)
+20. Basic Shell Scripting
+
+21. Server Basics (what runs on server)
+22. Permissions Issues Debugging
+23. Log Analysis (error finding)
+24. Backup Basics (rsync concept)
+25. Performance Basics (CPU, RAM, Disk understanding)
