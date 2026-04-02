@@ -11,15 +11,6 @@ Learning these commands helps in managing servers, troubleshooting issues, and h
 
 This repository documents my journey of learning Linux step by step with practical commands and real-world understanding.
 
-📂 Learning Structure
-
-Each folder represents one day or topic and contains:
-
-- 📘 Notes (easy explanations in my own words)
-- 💻 Commands used
-- 🧪 Practice examples
-
----
 
 📝 Current Focus
 
@@ -33,7 +24,7 @@ Each folder represents one day or topic and contains:
 
 Each folder contains:
 
-- Notes (easy explanations)
+- Notes 
 - Commands used
 - Practice examples
 
