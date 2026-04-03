@@ -7,6 +7,7 @@
 5. Viewing Files (cat, less, head, tail)
 
 
+
 6. Process Management (ps, top, kill, nice)
 7. Package Management (apt, yum basics)
 8. Disk Management (df, du, lsblk)
