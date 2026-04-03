@@ -1,0 +1,8 @@
+Navigation commands are -
+● 𝚙𝚠𝚍 — print working directory. 
+● ls — list directory contents. 
+● ls -la — list all files with details. 
+● cd /path — change to path. 
+● cd .. — go to parent directory. 
+● cd ~ — go to home directory. 
+● tree — display directories as a tree. 
