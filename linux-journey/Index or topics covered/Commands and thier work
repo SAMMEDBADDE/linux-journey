@@ -7,3 +7,16 @@ Navigation commands are -
 ● cd .. — go to parent directory. 
 ● cd ~ — go to home directory. 
 ● tree — display directories as a tree. 
+
+Files and directories 
+● touch file.txt — create an empty file or update 
+timestamp. 
+● mkdir dir — create a directory. 
+● mkdir -p a/b/c — create nested directories. 
+● cp src dst — copy a file or directory. 
+● cp -r dir1 dir2 — copy a directory recursively. 
+● mv old new — move or rename a file or directory. 
+● rm file — remove a file. 
+● rm -rf dir — remove a directory tree (use with caution). 
+● rmdir emptydir — remove an empty directory. 
+● stat file — show file metadata and timestamps.
