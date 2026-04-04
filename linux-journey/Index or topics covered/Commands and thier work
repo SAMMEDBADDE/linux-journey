@@ -9,6 +9,7 @@ Navigation commands are -
 ● tree — display directories as a tree. 
 
 Files and directories 
+
 ● touch file.txt — create an empty file or update 
 timestamp. 
 ● mkdir dir — create a directory. 
