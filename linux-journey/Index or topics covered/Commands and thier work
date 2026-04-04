@@ -8,6 +8,7 @@ Navigation commands are -
 ● cd ~ — go to home directory. 
 ● tree — display directories as a tree. 
 
+
 Files and directories 
 
 ● touch file.txt — create an empty file or update 
