@@ -31,5 +31,5 @@ Viewing and paging
 ● tail -f logfile — follow file updates (logs). 
 ● less file — page through a file with search. 
 ● more file — basic pager for files. 
- 
+● nl file — number lines while viewing.
 ● wc -l file — count lines in a file. 
