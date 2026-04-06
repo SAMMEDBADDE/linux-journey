@@ -25,7 +25,7 @@ timestamp.
 
 Viewing and paging 
 ● cat file — print file contents. 
-
+● tac file — print file contents in reverse. 
 ● head -n 20 file — show first 20 lines. 
 ● tail -n 20 file — show last 20 lines. 
 ● tail -f logfile — follow file updates (logs). 
