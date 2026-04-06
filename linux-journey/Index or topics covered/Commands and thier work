@@ -23,6 +23,7 @@ timestamp.
 ● basename /path/file — print filename from path. 
 ● dirname /path/file — print directory path from filename. 
 
+
 Viewing and paging 
 ● cat file — print file contents. 
 ● tac file — print file contents in reverse. 
