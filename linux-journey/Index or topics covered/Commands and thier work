@@ -1,5 +1,4 @@
 Navigation commands are -
-
 ● 𝚙𝚠𝚍 — print working directory. 
 ● ls — list directory contents. 
 ● ls -la — list all files with details. 
@@ -10,7 +9,6 @@ Navigation commands are -
 
 
 Files and directories 
-
 ● touch file.txt — create an empty file or update 
 timestamp. 
 ● mkdir dir — create a directory. 
@@ -22,3 +20,16 @@ timestamp.
 ● rm -rf dir — remove a directory tree (use with caution). 
 ● rmdir emptydir — remove an empty directory. 
 ● stat file — show file metadata and timestamps.
+● basename /path/file — print filename from path. 
+● dirname /path/file — print directory path from filename. 
+
+Viewing and paging 
+● cat file — print file contents. 
+
+● head -n 20 file — show first 20 lines. 
+● tail -n 20 file — show last 20 lines. 
+● tail -f logfile — follow file updates (logs). 
+● less file — page through a file with search. 
+● more file — basic pager for files. 
+● nl file — number lines while viewing. 
+● wc -l file — count lines in a file. 
