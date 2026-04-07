@@ -36,7 +36,6 @@ Viewing and paging
 ● wc -l file — count lines in a file. 
 
 Search and text processing 
-
 ● grep "pattern" file — search pattern in a file. 
 ● grep -ri "pattern" dir/ — recursive, case-insensitive 
 search. 
