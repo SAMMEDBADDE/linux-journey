@@ -24,7 +24,7 @@ timestamp.
 ● dirname /path/file — print directory path from filename. 
 
 
-Viewing and paging 
+Viewng and paging 
 ● cat file — print file contents. 
 ● tac file — print file contents in reverse. 
 ● head -n 20 file — show first 20 lines. 
