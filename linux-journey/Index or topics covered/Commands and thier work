@@ -34,3 +34,16 @@ Viewing and paging
 ● more file — basic pager for files. 
 ● nl file — number lines while viewing.
 ● wc -l file — count lines in a file. 
+
+Search and text processing 
+● grep "pattern" file — search pattern in a file. 
+● grep -ri "pattern" dir/ — recursive, case-insensitive 
+search. 
+● sort file — sort lines in a file. 
+● uniq file — omit repeated adjacent lines. 
+● cut -d ':' -f 1 file — select delimited fields. 
+● awk '{print $1}' file — print the first column. 
+● sed -i 's/old/new/g' file — in-place find and replace. 
+● tr 'a-z' 'A-Z' — translate characters (lower to upper). 
+● paste file1 file2 — merge lines side by side. 
+● tee out.txt — write output to file and stdout.
