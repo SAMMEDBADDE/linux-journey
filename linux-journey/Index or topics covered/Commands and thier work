@@ -48,6 +48,7 @@ search.
 ● paste file1 file2 — merge lines side by side. 
 ● tee out.txt — write output to file and stdout.
 
+
 Permissions and ownership 
 ● chmod 644 file — set rw-r--r-- permissions. 
 ● chmod 755 file — set rwxr-xr-x permissions. 
