@@ -59,3 +59,22 @@ Permissions and ownership
 ● umask 022 — set default permissions mask. 
 ● getfacl file — view file ACLs. 
 ● setfacl -m u:user:rwx file — set ACL for a user. 
+
+
+Processes and jobs 
+● ps aux — list all processes with details. 
+● top — interactive process viewer. 
+● htop — enhanced process viewer (if installed). 
+● pgrep name — find PIDs by process name. 
+● pkill name — send signals by process name. 
+● kill PID — terminate a process by PID. 
+● killall name — terminate processes by name. 
+● nice -n 10 cmd — start with adjusted priority. 
+● renice -n 10 -p PID — change priority of running process. 
+● jobs — list shell jobs. 
+● bg %1 — resume job in background. 
+● fg %1 — bring job to foreground. 
+● nohup command & — ignore hangups and run in 
+background. 
+● time command — measure execution time. 
+● watch -n 1 free — rerun a command at intervals.
