@@ -61,6 +61,7 @@ Permissions and ownership
 ● setfacl -m u:user:rwx file — set ACL for a user. 
 
 
+
 Processes and jobs 
 ● ps aux — list all processes with details. 
 ● top — interactive process viewer. 
