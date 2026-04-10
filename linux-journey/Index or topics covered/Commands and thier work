@@ -78,3 +78,15 @@ Processes and jobs
 background. 
 ● time command — measure execution time. 
 ● watch -n 1 free — rerun a command at intervals.
+
+System info and logs 
+● uname -a — kernel and system information. 
+● hostnamectl — view or set hostname. 
+● uptime — show load averages and uptime. 
+● free -h — memory and swap usage. 
+● vmstat — virtual memory statistics. 
+● iostat — CPU and I/O statistics. 
+● mpstat — per-CPU usage statistics. 
+● pidstat — per-process statistics. 
+● lscpu — CPU architecture details. 
+● lsusb — list USB devices.
