@@ -79,6 +79,7 @@ background.
 ● time command — measure execution time. 
 ● watch -n 1 free — rerun a command at intervals.
 
+
 System info and logs 
 ● uname -a — kernel and system information. 
 ● hostnamectl — view or set hostname. 
