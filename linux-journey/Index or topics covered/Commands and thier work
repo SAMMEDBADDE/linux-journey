@@ -89,3 +89,16 @@ System info and logs
 ● pidstat — per-process statistics. 
 ● lscpu — CPU architecture details. 
 ● lsusb — list USB devices.
+
+Disks, partitions, and filesystems 
+● df -h — mounted filesystem disk usage. 
+● du -sh dir/ — directory size summary. 
+● lsblk — list block devices. 
+● blkid — print block device attributes. 
+● fdisk -l — list partition tables. 
+● parted -l — list partitions with parted. 
+● mkfs.ext4 /dev/sdX1 — create an ext4 filesystem. 
+● fsck /dev/sdX1 — check and repair filesystem. 
+● mount /dev/sdX1 /mnt — mount a partition. 
+● umount /mnt — unmount a filesystem. 
+● cat /etc/fstab — view persistent mount table. 
