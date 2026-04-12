@@ -92,6 +92,7 @@ System info and logs
 ● lscpu — CPU architecture details. 
 ● lsusb — list USB devices.
 
+
 Disks, partitions, and filesystems 
 ● df -h — mounted filesystem disk usage. 
 ● du -sh dir/ — directory size summary. 
