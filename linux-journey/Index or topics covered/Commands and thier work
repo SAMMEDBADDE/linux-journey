@@ -103,4 +103,27 @@ Disks, partitions, and filesystems
 ● fsck /dev/sdX1 — check and repair filesystem. 
 ● mount /dev/sdX1 /mnt — mount a partition. 
 ● umount /mnt — unmount a filesystem. 
-● cat /etc/fstab — view persistent mount table. 
+● cat /etc/fstab — view persistent mount table.
+
+Networking and DNS 
+● ip addr — show IP addresses. 
+● ip route — show routing table. 
+● ping -c 4 host — test connectivity. 
+● traceroute host — trace network path. 
+● ss -tuln — list listening sockets and ports. 
+● netstat -tuln — legacy sockets and ports list. 
+● nslookup example.com — DNS query. 
+● dig example.com — detailed DNS query. 
+● curl -I https://example.com — HTTP request. 
+● wget https://example.com/file — download a file. 
+● ssh user@host — connect via SSH. 
+● scp file user@host:/path/ — copy file over SSH. 
+● sftp user@host — interactive file transfer over SSH. 
+● nc -l -p 1234 — listen on TCP port. 
+● nc host 80 — connect to TCP port. 
+● tcpdump -i eth0 port 443 — capture packets. 
+● nmap -sS host — scan ports with SYN. 
+● ufw enable — enable uncomplicated firewall. 
+● ufw allow 22 — allow SSH. 
+● iptables -L — list firewall rules. 
+● firewall-cmd --list-all — show firewalld config.  
