@@ -105,6 +105,7 @@ Disks, partitions, and filesystems
 ● umount /mnt — unmount a filesystem. 
 ● cat /etc/fstab — view persistent mount table.
 
+
 Networking and DNS 
 ● ip addr — show IP addresses. 
 ● ip route — show routing table. 
