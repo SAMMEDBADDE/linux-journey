@@ -128,3 +128,22 @@ Networking and DNS
 ● ufw allow 22 — allow SSH. 
 ● iptables -L — list firewall rules. 
 ● firewall-cmd --list-all — show firewalld config.  
+
+Archiving, compression, and sync 
+● tar -czf archive.tar.gz dir/ — create gzip tarball. 
+● tar -xzf archive.tar.gz — extract gzip tarball. 
+● tar -cf archive.tar dir/ — create tar archive. 
+● tar -xf archive.tar — extract tar archive. 
+● zip -r archive.zip dir/ — create zip archive. 
+● unzip archive.zip — extract zip archive. 
+● gzip file — compress with gzip. 
+● gunzip file.gz — decompress gzip file. 
+● bzip2 file — compress with bzip2. 
+● bunzip2 file.bz2 — decompress bzip2 file. 
+● xz file — compress with xz. 
+● unxz file.xz — decompress xz file. 
+● rsync -avz src/ dest/ — sync files locally. 
+● rsync -avz -e ssh src/ user@host:/dest/ — sync 
+over SSH. 
+● cpio -ov < filelist > archive.cpio — create cpio 
+archive.
