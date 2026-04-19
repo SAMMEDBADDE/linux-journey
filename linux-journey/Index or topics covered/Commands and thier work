@@ -147,3 +147,14 @@ Archiving, compression, and sync
 over SSH. 
 ● cpio -ov < filelist > archive.cpio — create cpio 
 archive.
+
+Package management 
+(Debian/Ubuntu) 
+● apt-get update — refresh package lists. 
+● apt-get install nginx — install a package. 
+● apt-get upgrade — upgrade installed packages. 
+● apt-get remove pkg — remove a package. 
+● apt-cache search nginx — search packages. 
+● apt-cache show pkg — show package details. 
+● dpkg -i pkg.deb — install a .deb file. 
+● dpkg -r pkg — remove a .deb package.  
