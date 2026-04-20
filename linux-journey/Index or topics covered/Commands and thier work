@@ -156,3 +156,6 @@ Package management
 ● apt-cache show pkg — show package details. 
 ● dpkg -i pkg.deb — install a .deb file. 
 ● dpkg -r pkg — remove a .deb package.  
+
+
+Stay tuned more updates are about to in...
