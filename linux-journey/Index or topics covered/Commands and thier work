@@ -158,5 +158,14 @@ Package management
 ● dpkg -i pkg.deb — install a .deb file. 
 ● dpkg -r pkg — remove a .deb package.  
 
+Package management 
+(RHEL/CentOS/Fedora) 
+● yum install pkg — install a package. 
+● yum update — update packages. 
+● yum remove pkg — remove a package. 
+● dnf install pkg — install with dnf. 
+● dnf update — update with dnf. 
+● rpm -i pkg.rpm — install an RPM. 
+● rpm -e pkg — erase an RPM. 
 
 Stay tuned more updates are about to in...
