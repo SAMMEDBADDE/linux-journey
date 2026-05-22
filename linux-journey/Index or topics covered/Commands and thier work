@@ -167,4 +167,20 @@ Package management
 ● rpm -i pkg.rpm — install an RPM. 
 ● rpm -e pkg — erase an RPM. 
 
+chmod - change the permissions of a file or directory
+
+# The first digit represents the owner of the file/directory
+# The second digit represents the group that the file/directory belongs to
+# The third digit represents all other users
+# 0 (no permission)
+# 1 (execute only)
+# 2 (write only)
+# 3 (write and execute)
+# 4 (read only)
+# 5 (read and execute)
+# 6 (read and write)
+# 7 (read, write, and execute)
+ 
+chmod 700 file.txt
+
 Stay tuned more updates are about to in...
