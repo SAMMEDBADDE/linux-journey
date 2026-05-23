@@ -22,8 +22,7 @@ timestamp.
 ● basename /path/file — print filename from path. 
 ● dirname /path/file — print directory path from filename. 
 
-
-Viewng and paging 
+View and ping commands 
 ● cat file — print file contents. 
 ● tac file — print file contents in reverse. 
 ● head -n 20 file — show first 20 lines. 
