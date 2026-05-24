@@ -1,185 +1,232 @@
-Linux Navigation commands -
-● 𝚙𝚠𝚍 — print working directory. 
-● ls — list directory contents. 
-● ls -la — list all files with details. 
-● cd /path — change to path. 
-● cd .. — go to parent directory. 
-● cd ~ — go to home directory. 
-● tree — display directories as a tree. 
+# 🐧 Linux Commands Cheat Sheet
 
-Files and directories 
-● touch file.txt — create an empty file or update 
-timestamp. 
-● mkdir dir — create a directory. 
-● mkdir -p a/b/c — create nested directories. 
-● cp src dst — copy a file or directory. 
-● cp -r dir1 dir2 — copy a directory recursively. 
-● mv old new — move or rename a file or directory. 
-● rm file — remove a file. 
-● rm -rf dir — remove a directory tree (use with caution). 
-● rmdir emptydir — remove an empty directory. 
-● stat file — show file metadata and timestamps.
-● basename /path/file — print filename from path. 
-● dirname /path/file — print directory path from filename. 
+A quick reference for commonly used Linux commands — organized for clarity and fast lookup.
 
-View and ping commands 
-● cat file — print file contents. 
-● tac file — print file contents in reverse. 
-● head -n 20 file — show first 20 lines. 
-● tail -n 20 file — show last 20 lines. 
-● tail -f logfile — follow file updates (logs). 
-● less file — page through a file with search. 
-● more file — basic pager for files. 
-● nl file — number lines while viewing.
-● wc -l file — count lines in a file. 
+---
 
-Search and text processing 
-● grep "pattern" file — search pattern in a file. 
-● grep -ri "pattern" dir/ — recursive, case-insensitive 
-search. 
-● sort file — sort lines in a file. 
-● uniq file — omit repeated adjacent lines. 
-● cut -d ':' -f 1 file — select delimited fields. 
-● awk '{print $1}' file — print the first column. 
-● sed -i 's/old/new/g' file — in-place find and replace. 
-● tr 'a-z' 'A-Z' — translate characters (lower to upper). 
-● paste file1 file2 — merge lines side by side. 
-● tee out.txt — write output to file and stdout.
+## 📂 Navigation Commands
+```bash
+pwd              # Print current working directory
+ls               # List directory contents
+ls -la           # List all files (including hidden) with details
+cd /path         # Change directory to /path
+cd ..            # Move to parent directory
+cd ~             # Go to home directory
+tree             # Display directory structure as a tree
+```
 
-Permissions and ownership 
-● chmod 644 file — set rw-r--r-- permissions. 
-● chmod 755 file — set rwxr-xr-x permissions. 
-● chmod +x script.sh — make a file executable. 
-● chown user:group file — change owner and group. 
-● chgrp group file — change group ownership. 
-● umask 022 — set default permissions mask. 
-● getfacl file — view file ACLs. 
-● setfacl -m u:user:rwx file — set ACL for a user. 
+---
 
+## 📁 Files & Directories
+```bash
+touch file.txt         # Create empty file / update timestamp
+mkdir dir              # Create directory
+mkdir -p a/b/c         # Create nested directories
+cp src dst             # Copy file or directory
+cp -r dir1 dir2        # Copy directory recursively
+mv old new             # Move or rename file/directory
+rm file                # Delete file
+rm -rf dir             # Delete directory recursively ⚠️
+rmdir emptydir         # Remove empty directory
+stat file              # Show file metadata
+basename /path/file    # Extract filename from path
+dirname /path/file     # Extract directory path
+```
 
-Processes and jobs 
-● ps aux — list all processes with details. 
-● top — interactive process viewer. 
-● htop — enhanced process viewer (if installed). 
-● pgrep name — find PIDs by process name. 
-● pkill name — send signals by process name. 
-● kill PID — terminate a process by PID. 
-● killall name — terminate processes by name. 
-● nice -n 10 cmd — start with adjusted priority. 
-● renice -n 10 -p PID — change priority of running process. 
-● jobs — list shell jobs. 
-● bg %1 — resume job in background. 
-● fg %1 — bring job to foreground. 
-● nohup command & — ignore hangups and run in 
-background. 
-● time command — measure execution time. 
-● watch -n 1 free — rerun a command at intervals.
+---
 
+## 📖 File Viewing & Monitoring
+```bash
+cat file           # Display file content
+tac file           # Display content in reverse
+head -n 20 file    # Show first 20 lines
+tail -n 20 file    # Show last 20 lines
+tail -f logfile    # Live log monitoring
+less file          # Scrollable viewer with search
+more file          # Basic file viewer
+nl file            # Show file with line numbers
+wc -l file         # Count number of lines
+```
 
-System info and logs 
-● uname -a — kernel and system information. 
-● hostnamectl — view or set hostname. 
-● uptime — show load averages and uptime. 
-● free -h — memory and swap usage. 
-● vmstat — virtual memory statistics. 
-● iostat — CPU and I/O statistics. 
-● mpstat — per-CPU usage statistics. 
-● pidstat — per-process statistics. 
-● lscpu — CPU architecture details. 
-● lsusb — list USB devices.
+---
 
+## 🔍 Search & Text Processing
+```bash
+grep "pattern" file        # Search pattern in file
+grep -ri "pattern" dir/    # Recursive case-insensitive search
+sort file                  # Sort lines
+uniq file                  # Remove duplicate adjacent lines
+cut -d ':' -f 1 file       # Extract fields
+awk '{print $1}' file      # Print first column
+sed -i 's/old/new/g' file  # Replace text in file
+tr 'a-z' 'A-Z'             # Convert lowercase to uppercase
+paste file1 file2          # Merge files line-wise
+tee out.txt                # Output to file + terminal
+```
 
-Disks, partitions, and filesystems 
-● df -h — mounted filesystem disk usage. 
-● du -sh dir/ — directory size summary. 
-● lsblk — list block devices. 
-● blkid — print block device attributes. 
-● fdisk -l — list partition tables. 
-● parted -l — list partitions with parted. 
-● mkfs.ext4 /dev/sdX1 — create an ext4 filesystem. 
-● fsck /dev/sdX1 — check and repair filesystem. 
-● mount /dev/sdX1 /mnt — mount a partition. 
-● umount /mnt — unmount a filesystem. 
-● cat /etc/fstab — view persistent mount table.
+---
 
+## 🔐 Permissions & Ownership
+```bash
+chmod 644 file        # rw-r--r--
+chmod 755 file        # rwxr-xr-x
+chmod +x script.sh    # Make executable
+chown user:group file # Change owner & group
+chgrp group file      # Change group only
+umask 022             # Default permission mask
+getfacl file          # View ACLs
+setfacl -m u:user:rwx file  # Set ACL
+```
 
-Networking and DNS 
-● ip addr — show IP addresses. 
-● ip route — show routing table. 
-● ping -c 4 host — test connectivity. 
-● traceroute host — trace network path. 
-● ss -tuln — list listening sockets and ports. 
-● netstat -tuln — legacy sockets and ports list. 
-● nslookup example.com — DNS query. 
-● dig example.com — detailed DNS query. 
-● curl -I https://example.com — HTTP request. 
-● wget https://example.com/file — download a file. 
-● ssh user@host — connect via SSH. 
-● scp file user@host:/path/ — copy file over SSH. 
-● sftp user@host — interactive file transfer over SSH. 
-● nc -l -p 1234 — listen on TCP port. 
-● nc host 80 — connect to TCP port. 
-● tcpdump -i eth0 port 443 — capture packets. 
-● nmap -sS host — scan ports with SYN. 
-● ufw enable — enable uncomplicated firewall. 
-● ufw allow 22 — allow SSH. 
-● iptables -L — list firewall rules. 
-● firewall-cmd --list-all — show firewalld config.  
+### 🧠 chmod Quick Reference
+```
+0 = No permission
+1 = Execute
+2 = Write
+3 = Write + Execute
+4 = Read
+5 = Read + Execute
+6 = Read + Write
+7 = Read + Write + Execute
+```
 
-Archiving, compression, and sync 
-● tar -czf archive.tar.gz dir/ — create gzip tarball. 
-● tar -xzf archive.tar.gz — extract gzip tarball. 
-● tar -cf archive.tar dir/ — create tar archive. 
-● tar -xf archive.tar — extract tar archive. 
-● zip -r archive.zip dir/ — create zip archive. 
-● unzip archive.zip — extract zip archive. 
-● gzip file — compress with gzip. 
-● gunzip file.gz — decompress gzip file. 
-● bzip2 file — compress with bzip2. 
-● bunzip2 file.bz2 — decompress bzip2 file. 
-● xz file — compress with xz. 
-● unxz file.xz — decompress xz file. 
-● rsync -avz src/ dest/ — sync files locally. 
-● rsync -avz -e ssh src/ user@host:/dest/ — sync 
-over SSH. 
-● cpio -ov < filelist > archive.cpio — create cpio 
-archive.
-
-Package management 
-(Debian/Ubuntu) 
-● apt-get update — refresh package lists. 
-● apt-get install nginx — install a package. 
-● apt-get upgrade — upgrade installed packages. 
-● apt-get remove pkg — remove a package. 
-● apt-cache search nginx — search packages. 
-● apt-cache show pkg — show package details. 
-● dpkg -i pkg.deb — install a .deb file. 
-● dpkg -r pkg — remove a .deb package.  
-
-Package management 
-(RHEL/CentOS/Fedora) 
-● yum install pkg — install a package. 
-● yum update — update packages. 
-● yum remove pkg — remove a package. 
-● dnf install pkg — install with dnf. 
-● dnf update — update with dnf. 
-● rpm -i pkg.rpm — install an RPM. 
-● rpm -e pkg — erase an RPM. 
-
-chmod - change the permissions of a file or directory
-
-# The first digit represents the owner of the file/directory
-# The second digit represents the group that the file/directory belongs to
-# The third digit represents all other users
-# 0 (no permission)
-# 1 (execute only)
-# 2 (write only)
-# 3 (write and execute)
-# 4 (read only)
-# 5 (read and execute)
-# 6 (read and write)
-# 7 (read, write, and execute)
- 
+Example:
+```bash
 chmod 700 file.txt
+```
 
-Stay tuned more updates are about to in...
+---
+
+## ⚙️ Processes & Jobs
+```bash
+ps aux              # List all processes
+top                 # Real-time process viewer
+htop                # Enhanced viewer (if installed)
+pgrep name          # Find process IDs
+pkill name          # Kill by process name
+kill PID            # Kill by PID
+killall name        # Kill all matching processes
+nice -n 10 cmd      # Run with priority
+renice -n 10 -p PID # Change priority
+jobs                # Show background jobs
+bg %1               # Resume in background
+fg %1               # Bring to foreground
+nohup cmd &         # Run in background (ignore hangups)
+time cmd            # Measure execution time
+watch -n 1 free     # Run command repeatedly
+```
+
+---
+
+## 🖥️ System Info & Monitoring
+```bash
+uname -a     # System & kernel info
+hostnamectl  # Hostname info
+uptime       # System uptime
+free -h      # Memory usage
+vmstat       # Memory stats
+iostat       # CPU & I/O stats
+mpstat       # CPU usage per core
+pidstat      # Process stats
+lscpu        # CPU details
+lsusb        # USB devices
+```
+
+---
+
+## 💽 Disk & Filesystem
+```bash
+df -h                # Disk usage
+du -sh dir/          # Directory size
+lsblk                # Block devices
+blkid                # Device attributes
+fdisk -l             # Partition list
+parted -l            # Partition details
+mkfs.ext4 /dev/sdX1  # Format partition
+fsck /dev/sdX1       # Check filesystem
+mount /dev/sdX1 /mnt # Mount partition
+umount /mnt          # Unmount
+cat /etc/fstab       # Auto-mount config
+```
+
+---
+
+## 🌐 Networking & DNS
+```bash
+ip addr              # Show IP address
+ip route             # Routing table
+ping -c 4 host       # Connectivity test
+traceroute host      # Trace route
+ss -tuln             # Open ports
+netstat -tuln        # Legacy port list
+nslookup example.com # DNS lookup
+dig example.com      # Detailed DNS query
+curl -I URL          # HTTP request
+wget URL             # Download file
+ssh user@host        # Remote login
+scp file user@host:/path/  # Copy over SSH
+sftp user@host       # File transfer
+nc -l -p 1234        # Listen on port
+nc host 80           # Connect to port
+tcpdump -i eth0 port 443 # Packet capture
+nmap -sS host        # Port scan
+ufw enable           # Enable firewall
+ufw allow 22         # Allow SSH
+iptables -L          # Firewall rules
+firewall-cmd --list-all # Firewalld config
+```
+
+---
+
+## 📦 Archiving & Compression
+```bash
+tar -czf file.tar.gz dir/   # Create tar.gz
+tar -xzf file.tar.gz        # Extract tar.gz
+tar -cf file.tar dir/       # Create tar
+tar -xf file.tar            # Extract tar
+zip -r file.zip dir/        # Create zip
+unzip file.zip              # Extract zip
+gzip file                   # Compress
+gunzip file.gz              # Decompress
+bzip2 file                  # Compress
+bunzip2 file.bz2            # Decompress
+xz file                     # Compress
+unxz file.xz                # Decompress
+rsync -avz src/ dest/       # Sync files
+rsync -avz -e ssh src/ user@host:/dest/  # Remote sync
+cpio -ov < filelist > archive.cpio       # Create archive
+```
+
+---
+
+## 📦 Package Management
+
+### Debian / Ubuntu
+```bash
+apt-get update        # Update package list
+apt-get install pkg   # Install package
+apt-get upgrade       # Upgrade packages
+apt-get remove pkg    # Remove package
+apt-cache search pkg  # Search package
+apt-cache show pkg    # Package info
+dpkg -i pkg.deb       # Install .deb
+dpkg -r pkg           # Remove package
+```
+
+### RHEL / CentOS / Fedora
+```bash
+yum install pkg
+yum update
+yum remove pkg
+
+dnf install pkg
+dnf update
+
+rpm -i pkg.rpm
+rpm -e pkg
+```
+
+---
+
+## 🚀 Final Note
+> This is a continuously evolving cheat sheet — more commands and real-world use cases coming soon.
